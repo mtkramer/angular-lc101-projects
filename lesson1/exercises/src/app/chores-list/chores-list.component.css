@@ -1,0 +1,12 @@
+.chores{
+    color: darkblue;
+    font-size: large;
+}
+
+.chores h3{
+    text-decoration: underline;
+}
+
+.chores li{
+    font-style: italic;
+}
