@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('http://bgfons.com/uploads/tile/tile_texture3070.jpg');
+    background-position: center;
+    background-size: cover;
+}
