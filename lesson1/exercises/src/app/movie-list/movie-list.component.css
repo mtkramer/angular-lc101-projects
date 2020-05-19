@@ -1,7 +1,10 @@
-.movies{
+.movies {
     color: maroon;
     font-size: larger;
 }
-.movies h3{
-    text-align: center;
+.movies h3 {
+    text-decoration: underline;
+}
+li {
+    text-align: left;
 }
