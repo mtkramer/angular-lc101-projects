@@ -36,7 +36,9 @@ export class CandidatesComponent implements OnInit {
     this.crew.push(selectedCandidate);
   }
 
-  // BONUS: Code the changeMissionName function here:
+  changeMissionName(newName) {
+    this.missionName = newName;
+  }
 
 
 }
