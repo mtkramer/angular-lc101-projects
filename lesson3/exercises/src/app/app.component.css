@@ -1,6 +1,6 @@
 .justify-content-center {
-    text-align: center; 
-    height: 400px; 
+    text-align: center;
+    height: 400px;
     width: 100%;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .container-left {
-    text-align: center; 
+    text-align: center;
     display: inline-block;
 }
 
@@ -25,11 +25,11 @@ img {
 }
 
 .container-right {
-    text-align: center; 
+    text-align: center;
     display: inline-block;
 }
 
-.container-right > p { 
+.container-right > p {
     display: inline-block;
 }
 
