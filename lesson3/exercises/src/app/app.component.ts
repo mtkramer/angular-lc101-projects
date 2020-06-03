@@ -11,7 +11,8 @@ export class AppComponent {
   color = 'green';
   height = 0;
   width = 0;
-  message = 'Space shuttle ready for takeoff!';
+  message = "Space shuttle ready for takeoff!";
+  log = '';
 
   launch(): void {
     if (this.color !== 'blue') {
@@ -35,7 +36,16 @@ export class AppComponent {
     else {
       window.alert("Shuttle is not in flight.\nShuttle must lift off before it can land.");
     }
+  }
 
+  abort(): void {
+    if (this.color === 'green' && window.confirm("Abort Mission?\nAre You Sure?")) {
+      this.message = "Mission Aborted!";
+      this.color = 'red';
+    }
+    else {
+      window.alert("Cannot abort mission while in flight.\nShuttle must land before mission can abort.");
+    }
   }
 
 }
