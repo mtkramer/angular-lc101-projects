@@ -34,8 +34,8 @@
       </div>
    </div>
    <div class="container-control-buttons">
-      <button id="launch-button" (click)="launch();">Take Off</button>
-      <button>Land</button>
+      <button (click)="launch();">Take Off</button>
+      <button (click)="land();">Land</button>
       <button>Abort Mission</button>
       <div id="log">{{confirmed}}</div>
    </div>
