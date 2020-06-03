@@ -16,20 +16,26 @@
       </div>
 
       <div class="col-6">
-         <div class="shuttle-background" [style.background-color]="color">
-            <img src="assets/images/LaunchCode_rocketline_white.png" height="75" width="75" [style.left]="0"
-               [style.bottom]="0" />
+         <div #background class="shuttle-background" [style.background-color]="color">
+            <!--<div #foto [style.height.px]="foto.getBoundingClientRect().width / 2">-->
+            <img src="assets/images/LaunchCode_rocketline_white.png" height="75" width="75" [style.left.px]="left"
+               [style.bottom.px]="bottom" [style.box-shadow]="shadow" />
          </div>
       </div>
 
       <div class="col-3">
          <div class="container-right" b>
-            <button>Up</button>
-            <button>Down</button>
-            <button>Right</button>
-            <button>Left</button>
-            <h3>Space Shuttle Height</h3>
-            <p>{{height}} km</p>
+            <h3>Space Shuttle Position</h3>
+            <button (click)="move('up');">Up</button>
+            <button (click)="move('down');">Down</button>
+            <button (click)="move('right');">Right</button>
+            <button (click)="move('left');">Left</button>
+            <h3>Space Shuttle Altitude</h3>
+            <div>
+               <p>{{altitude}}0,000 km</p>
+            </div>
+            <button (click)="fly('asc');">Ascend</button>
+            <button (click)="fly('dec');">Decend</button>
          </div>
       </div>
    </div>
